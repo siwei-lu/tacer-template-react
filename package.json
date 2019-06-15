@@ -1,6 +1,6 @@
 {
   "name": "tacer-template-react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A tacer template using React.js",
   "bin": {
     "generate": "bin/generate.js",
