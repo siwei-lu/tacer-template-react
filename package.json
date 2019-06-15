@@ -1,0 +1,36 @@
+{
+  "name": "seed",
+  "version": "0.1.0",
+  "description": "A tacer template using React.js",
+  "bin": {
+    "generate": ".bin/generate.js",
+    "tacer-script": "./bin/script.js"
+  },
+  "scripts": {
+    "start": "node .bin/generate.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IdanLoo/tacer-template-react"
+  },
+  "keywords": [
+    "template",
+    "tacer",
+    "react"
+  ],
+  "author": "Idan Loo &lt;im@siwei.lu&gt;",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.4.4",
+    "@storybook/addon-actions": "^5.0.11",
+    "@storybook/addon-links": "^5.0.11",
+    "@storybook/addons": "^5.0.11",
+    "@storybook/react": "^5.0.11",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.5",
+    "parcel-bundler": "^1.12.3",
+    "tacer-seed": "^0.1.0",
+    "typescript": "^3.4.5"
+  }
+}
