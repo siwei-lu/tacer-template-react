@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "description": "A tacer template using React.js",
   "bin": {
-    "generate": ".bin/generate.js",
-    "tacer-script": "./bin/script.js"
+    "generate": "bin/generate.js",
+    "tacer-script": "bin/script.js"
   },
   "scripts": {
     "start": "node .bin/generate.js",
