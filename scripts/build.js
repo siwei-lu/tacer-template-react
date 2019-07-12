@@ -2,17 +2,15 @@ const Parcel = require('parcel-bundler')
 const { resolve } = require('path')
 
 const cacheDir = resolve(__dirname, '../.cache')
-const entrypoint = `${process.cwd()}/index.html`
+const entrypoint = resolve(process.cwd(), './src/index.html')
 
-function build() {
-  const task = new Parcel(entrypoint, {
+function buld() {
+  new Parcel(entrypoint, {
     cacheDir,
     watch: false,
     minify: true,
     sourceMaps: false,
-  })
-
-  task.bundle()
+  }).bundle()
 }
 
-module.exports = build
+module.exports = buld

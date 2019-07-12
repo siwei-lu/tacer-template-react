@@ -1,16 +1,11 @@
+const { spawn } = require('child_process')
 const { resolve } = require('path')
-const { execFile } = require('child_process')
 
-const start = resolve(__dirname, '../node_modules/.bin/start-storybook')
-const storybookDir = resolve(__dirname, '../.storybook')
+const config = resolve(__dirname, '../storybook')
+const port = process.env.STORYBOOK_PORT || '6006'
 
 function storybook() {
-  const task = execFile(start, ['-c', storybookDir, '-p', '6006'], {
-    cwd: process.cwd(),
-  })
-
-  task.stdout.pipe(process.stdout)
-  task.stderr.pipe(process.stderr)
+  spawn('start-storybook', ['-c', config, '-p', port], { stdio: 'inherit' })
 }
 
 module.exports = storybook

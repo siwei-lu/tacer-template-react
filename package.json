@@ -1,14 +1,13 @@
 {
   "name": "tacer-template-react",
-  "version": "0.1.1",
-  "description": "A tacer template using React.js",
+  "version": "0.2.0",
+  "description": "Create react apps using tacer.",
   "bin": {
     "generate": "bin/generate.js",
     "tacer-script": "bin/script.js"
   },
   "scripts": {
-    "start": "node .bin/generate.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preversion": "tacer-publish"
   },
   "repository": {
     "type": "git",
@@ -19,18 +18,18 @@
     "tacer",
     "react"
   ],
-  "author": "Idan Loo &lt;im@siwei.lu&gt;",
+  "author": "Idan Loo <im@siwei.lu>",
   "license": "MIT",
   "dependencies": {
-    "@babel/core": "^7.4.4",
-    "@storybook/addon-actions": "^5.0.11",
-    "@storybook/addon-links": "^5.0.11",
-    "@storybook/addons": "^5.0.11",
-    "@storybook/react": "^5.0.11",
-    "awesome-typescript-loader": "^5.2.1",
-    "babel-loader": "^8.0.5",
+    "@storybook/addons": "^5.1.9",
     "parcel-bundler": "^1.12.3",
-    "tacer-seed": "^0.1.0",
-    "typescript": "^3.4.5"
+    "tacer-seed": "^0.2.3",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3"
+  },
+  "peerDependencies": {
+    "@storybook/addon-actions": "^5.1.9",
+    "@storybook/addon-links": "^5.1.9",
+    "@storybook/react": "^5.1.9"
   }
 }
