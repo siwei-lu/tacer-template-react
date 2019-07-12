@@ -1,0 +1,31 @@
+{
+  "name": "tacer-template-react",
+  "version": "0.2.0",
+  "description": "Create react apps using tacer.",
+  "bin": {
+    "generate": "bin/generate.js",
+    "tacer-script": "bin/script.js"
+  },
+  "scripts": {
+    "preversion": "tacer-publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IdanLoo/tacer-template-react"
+  },
+  "keywords": [],
+  "author": "Idan Loo <im@siwei.lu>",
+  "license": "MIT",
+  "dependencies": {
+    "@storybook/addons": "^5.1.9",
+    "parcel-bundler": "^1.12.3",
+    "tacer-seed": "^0.2.3",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3"
+  },
+  "peerDependencies": {
+    "@storybook/addon-actions": "^5.1.9",
+    "@storybook/addon-links": "^5.1.9",
+    "@storybook/react": "^5.1.9"
+  }
+}
