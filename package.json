@@ -7,7 +7,7 @@
     "tacer-script": "bin/script.js"
   },
   "scripts": {
-    "preversion": "tacer-publish"
+    "build": "tacer-publish"
   },
   "repository": {
     "type": "git",
