@@ -22,6 +22,7 @@
   "license": "MIT",
   "dependencies": {
     "@storybook/addons": "^5.1.9",
+    "jest": "^24.8.0",
     "parcel-bundler": "^1.12.3",
     "tacer-seed": "^0.2.3",
     "ts-loader": "^6.0.4",
