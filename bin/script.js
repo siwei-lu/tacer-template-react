@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 const readdir = require('fs').readdirSync
-const { resolve } = require('path')
+const { resolve, join } = require('path')
 
 const scriptsPath = resolve(__dirname, '../scripts')
 const scripts = readdir(scriptsPath)
@@ -10,5 +10,6 @@ if (scripts.indexOf(`${targetName}.js`) === -1) {
   throw new Error(`No method named ${targetName}!`)
 }
 
-const target = require(`${scriptsPath}/${targetName}`)
+const targetPath = join(scriptsPath, targetName)
+const target = require(targetPath)
 target()

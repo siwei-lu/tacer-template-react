@@ -1,4 +1,3 @@
-const { pathsToModuleNameMapper } = require('ts-jest/utils')
 const { resolve } = require('path')
 
 const cwd = process.cwd()
@@ -9,7 +8,9 @@ module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'node',
   rootDir: process.cwd(),
+  testMatch: ['<rootDir>/__tests__/**/*.ts'],
   moduleNameMapper: {
+    '^~$': src,
     '^~/(.*)$': `${src}/$1`,
   },
 }
