@@ -1,16 +1,13 @@
 const { resolve } = require('path')
 
 const cwd = process.cwd()
-const src = resolve(cwd, './src')
-const { compilerOptions } = require(resolve(cwd, './tsconfig.json'))
+const src = resolve(cwd, 'src')
 
 module.exports = {
   preset: 'ts-jest',
-  testEnvironment: 'node',
-  rootDir: process.cwd(),
-  testMatch: ['<rootDir>/__tests__/**/*.ts'],
+  testEnvironment: 'jsdom',
+  rootDir: cwd,
   moduleNameMapper: {
-    '^~$': src,
     '^~/(.*)$': `${src}/$1`,
   },
 }
