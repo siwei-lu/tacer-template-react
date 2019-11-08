@@ -1,6 +1,6 @@
 {
   "name": "tacer-template-react",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Create react apps using tacer.",
   "bin": {
     "tacer-script": "bin/script.js"
