@@ -14,13 +14,12 @@ const app = express()
 
 const proxyConfig = pkg.proxy
 if (proxyConfig) {
-  Object.entries([k, v] => app.use(k, proxy(v, { changeOrigin: true })))
+  Object.entries(([k, v]) => app.use(k, proxy(v, { changeOrigin: true })))
 }
-
 
 function start() {
   const bundler = new Parcel(entrypoint, { cacheDir, outDir })
-  app.use(bundler.middleware).listen(port)
+  app.use(bundler.middleware()).listen(port)
 }
 
 module.exports = start
